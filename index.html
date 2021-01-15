@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>
+        Research Survey
+    </title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+        <header>
+            <h1 id="title">Research Survey</h1>
+            <p id="description">Help us understand how you do research. Research here is broadly defined 
+                - it doesn't just include reading and writing journal articles, but in general any process 
+                when you look up information and knowledge and process them for further usage. 
+                Examples include: writing research paper for school, finding information on workout & nutritions, 
+                researching studies for a blog/ video/ etc. </p>
+        </header>
+        <form id="survey-form">
+            <fieldset class = "form-question">
+                <label for="name" id="name-label" class="input-label" >1. Name</label>
+                <input type="text" id="name" placeholder = "Enter your name" required>
+            </fieldset>
+            <fieldset class ="form-question">
+                <label for="email" id="email-label" class="input-label" >2. Email</label>
+                <input type="email" id="email" placeholder = "Enter your email" required>
+            </fieldset>
+            <fieldset class="form-question">
+                <label for="number" id="number-label" class="input-label" >3. Age</label>
+                <input type="number" id="number" placeholder = "Enter your age" required min ="1" max="100" >
+            </fieldset>
+             <fieldset class="form-question">
+                <label for="dropdown" id="dropdown-label" class="input-label">4. What's your primary motivation for doing research?</label>
+                <select name="motivation" id="dropdown" required>
+                    <option value="study"> As part of my study </option>
+                    <option value="work">As part of my work </option>
+                    <option value="hobby">As a hobby/ interest</option>
+                    <option value="other">Other</option>
+                </select>       
+             </fieldset>
+             <fieldset class="form-question">
+                 <legend class="input-label">5. How often do you do research?</legend>
+                 <input type="radio" name="radio" id="one" value="one"><label for="one">Every day</label><br>
+                 <input type="radio" name="radio" id="two" value="two"><label for="two">At least once a week</label><br>
+                 <input type="radio" name="radio" id="three" value="three"><label for="three">At least once a month</label><br>
+                 <input type="radio" name="radio" id="four" value="four"><label for="four">Less than once a month</label>
+                 <br>
+             </fieldset>
+             <fieldset class="form-question">
+                <legend class="input-label">6. How difficult is the process for you?</legend>
+                <input type="radio" name="radio" id="no" value="no"><label for="no">I find no difficulty doing research.</label><br>
+                <input type="radio" name="radio" id="minor" value="minor"><label for="minor">I find minor difficulty doing research.</label><br>
+                <input type="radio" name="radio" id="moderate" value="moderate"><label for="moderate">I find moderate difficulty doing research.</label><br>
+                <input type="radio" name="radio" id="major" value="major"><label for="major">I find major difficulty doing research.</label>
+                <br>
+            </fieldset>
+             <fieldset class="form-question">
+                <legend class="input-label">7. What are the 3 biggest problems you encounter while doing research? </legend>
+                <span class="subtitle">Select at most 3 boxes. </span><br>
+                <input type="checkbox" name="problem" id="start" value="start"><label for="start">Don't know where to start</label><br>
+                <input type="checkbox" name="problem" id="resource" value="resource"><label for="resource">Don't know where to look for trustworthy resources</label><br>
+                <input type="checkbox" name="problem" id="links" value="links"><label for="links">Don't know how the resources are connected and linked</label><br>
+                <input type="checkbox" name="problem" id="stop" value="stop"><label for="stop">Don't know when to stop researching and start synthesizing</label><br>
+                <input type="checkbox" name="problem" id="understand" value="understand"><label for="understand">Don't understand the resources</label><br>
+                <input type="checkbox" name="problem" id="synthesize" value="synthesize"><label for="synthesize">Don't know how to synthesize the information</label><br>
+                <input type="checkbox" name="problem" id="track" value="track"><label for="track">Difficulty tracking the sources and their relevance</label><br>
+                <input type="checkbox" name="problem" id="others" value="others"><label for="others">Others</label></br>
+                <input type="checkbox" name="problem" id="others" value="others"><label for="others">I have no difficulty doing research.</label>
+            </fieldset>
+            <fieldset class="form-question">
+                <label for="elaborate" id="elaborate-label" class="input-label">8. Feel free to elaborate on the problems you have encountered.</label>
+                <textarea id="elaborate" placeholder="Enter your comment here..."></textarea>
+             </fieldset>
+             <fieldset class="form-question">
+                <label for="textarea" id="textarea-label" class="input-label">9. What tools have you tried to solve the problems above? How satisfied are you with these tools?</label>
+                <textarea id="textarea" placeholder = "Enter your comment here..." required></textarea>
+             </fieldset>
+             <fieldset class="form-question">
+                <label for="anything-else" id="anything-else-label" class="input-label">10. Anything else?</label>
+                <textarea id="anything-else" placeholder="Enter your comment here..."></textarea>
+             </fieldset>
+            <button type="submit" id="submit">Submit </button>
+        </form>
+    </div>
+    
+</body>

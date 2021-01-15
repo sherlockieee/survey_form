@@ -1,0 +1,92 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 5% 20%;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(255, 117, 27, 0.5),
+      rgba(255, 62, 13, 0.5)
+    ),
+    url("https://tse2.mm.bing.net/th?id=OIP.I7I5uI4ujlmQycE2FQyUtQHaDB&pid=Api");
+  background-color: rgb(245, 83, 1);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+fieldset {
+  border: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+.container {
+  background-color: rgba(255, 225, 53, 0.8);
+  padding: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0 10px 0;
+  padding: 5px 5px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+textarea {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+
+button {
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2em;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: rgb(255, 171, 40);
+  color: white;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: rgb(119, 117, 117);
+  font-size: 0.8em;
+  padding: 0 20px;
+}
+
+.input-label {
+  font-weight: bold;
+}
